@@ -11,7 +11,7 @@ CREATE DATABASE [{{YourDatabaseName}}FileManagement]
  FILEGROUP [{{YourDatabaseName}}FileManagementFilestreamFG] CONTAINS FILESTREAM  DEFAULT
 ( NAME = N'{{YourDatabaseName}}FileManagementContainer', FILENAME = N'D:\DataFile\{{YourDatabaseName}}FileManagement\{{YourDatabaseName}}FileManagementContainer')
  LOG ON 
-( NAME = N'{{YourDatabaseName}}FileManagement_log', FILENAME = N'E:\LogFile\{{YourDatabaseName}}FileManagement\{{YourDatabaseName}}FileManagement_log.ldf' 
+( NAME = N'{{YourDatabaseName}}FileManagement_log', FILENAME = N'D:\DataFile\{{YourDatabaseName}}FileManagement\{{YourDatabaseName}}FileManagement_log.ldf' 
 , SIZE = 1048576KB , MAXSIZE = 2048GB , FILEGROWTH = 1048576KB )
 GO
 
